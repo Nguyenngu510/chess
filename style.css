@@ -188,6 +188,12 @@
 @media(max-width:850px){.effect-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.live-grid,.chart-pair,.effect-switches,.effect-fields,.effect-copy{grid-template-columns:1fr}.line-chart-large{height:225px}.chart-card{padding:16px}.live-grid .card strong{font-size:32px}}
 .board-stage{position:relative;width:100%}
+.learn-card{padding:12px 16px;border-color:#478c97}
+.learn-toggle{display:flex;align-items:center;gap:10px;font-weight:700;cursor:pointer}
+.learn-toggle input{accent-color:#68d6e9;width:18px;height:18px}
+.learn-card .hint{margin:8px 0 0;font-size:13px}
+.square.learn-from{box-shadow:inset 0 0 0 4px #4ac6e8,inset 0 0 18px #4ac6e855}
+.square.learn-to{box-shadow:inset 0 0 0 4px #f4d377,inset 0 0 18px #f4d37766}
 .square.last-move{box-shadow:inset 0 0 0 999px #e6bb4745}
 .square.in-check{box-shadow:inset 0 0 0 999px #db374b99, inset 0 0 0 5px #ffcf8a;animation:king-check-pulse 1s ease-in-out infinite alternate}
 .move-effect{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%) scale(.8);max-width:90%;padding:14px 24px;border-radius:14px;border:2px solid #f7cf7a;background:#1b1724eb;color:#ffe5a6;box-shadow:0 12px 45px #000b,0 0 42px #ffd36d66;font:700 clamp(17px,3.2vw,32px) Georgia,serif;letter-spacing:.04em;text-align:center;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .18s,transform .3s}
