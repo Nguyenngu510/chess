@@ -192,8 +192,8 @@
 .learn-toggle{display:flex;align-items:center;gap:10px;font-weight:700;cursor:pointer}
 .learn-toggle input{accent-color:#68d6e9;width:18px;height:18px}
 .learn-card .hint{margin:8px 0 0;font-size:13px}
-.square.learn-from{box-shadow:inset 0 0 0 4px #4ac6e8,inset 0 0 18px #4ac6e855}
-.square.learn-to{box-shadow:inset 0 0 0 4px #f4d377,inset 0 0 18px #f4d37766}
+.square.learn-from:not(.in-check){background:#bd96ed;box-shadow:inset 0 0 0 4px #7841b5}
+.square.learn-to:not(.in-check){background:#a876e0;box-shadow:inset 0 0 0 5px #ead7ff,inset 0 0 18px #7131ac80}
 .square.last-move{box-shadow:inset 0 0 0 999px #e6bb4745}
 .square.in-check{box-shadow:inset 0 0 0 999px #db374b99, inset 0 0 0 5px #ffcf8a;animation:king-check-pulse 1s ease-in-out infinite alternate}
 .move-effect{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%) scale(.8);max-width:90%;padding:14px 24px;border-radius:14px;border:2px solid #f7cf7a;background:#1b1724eb;color:#ffe5a6;box-shadow:0 12px 45px #000b,0 0 42px #ffd36d66;font:700 clamp(17px,3.2vw,32px) Georgia,serif;letter-spacing:.04em;text-align:center;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .18s,transform .3s}
@@ -210,3 +210,5 @@
   .game-active #game .section-head h2{font-size:24px}
   .game-active .game-controls>div button{min-width:100px}
 }
+
+.clock-row{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:8px;border-radius:6px}.clock-row.active{background:#e3bb6922;outline:1px solid var(--gold)}#clock-rule{margin:0 0 8px}.effect-fields select{max-width:100%;padding:10px;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:6px}
